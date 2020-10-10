@@ -1,6 +1,6 @@
 # PABRIK 🏭 🏭 🏭
 
-Pabrik is a helper that will help you creating test object. The main idea is to create dummy API object response. My first tought when creating this package, is to use this on creating dummy object when writing test.
+Pabrik is a helper that will help you creating dummy object. My first tought when creating this package, is to use this on creating dummy object when writing test.
 
 ## Add package to your project
 ```

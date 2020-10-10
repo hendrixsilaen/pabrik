@@ -1,0 +1,17 @@
+{
+  "name": "pabrik",
+  "version": "1.0.0",
+  "description": "Pabrik is a helper that will help you creating test object. The main idea is to create dummy API object response.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "author": "hendrixsilaen <silaen.hjr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {}
+}

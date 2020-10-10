@@ -1,34 +1,32 @@
-# EXAMPLE
+# PABRIK 🏭 🏭 🏭
 
+Pabrik is a helper that will help you creating test object. The main idea is to create dummy API object response. My first tought when creating this package, is to use this on creating dummy object when writing test.
+
+## Add package to your project
+```
+npm install pabrik --save-dev
+```
+
+## How to use
 ```javascript
-const { Pabrik } = require('./dist/index')
+const { Pabrik } = require('pabrik')
 
 const products = {
-  employee: {
-    firstName: "John",
-    lastName: "Doe",
-    age: 25
-  },
   asset: {
     id: "asset-id-01",
     name: "Honda HRV",
     condition: "good",
     price: 300000000
+  },
+  employee: {
+    id: "employee-id-01",
+    firstName: "John",
+    lastName: "Doe",
+    age: 25
   }
 }
 
 const pabrik = new Pabrik(products)
-
-const newEmployee = pabrik.create('employee', { age: 30 })
-console.log(newEmployee)
-/*
-  RESULT
-  {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 30
-  }
-*/
 
 const newAsset = pabrik.create('asset')
 console.log(newAsset)
@@ -41,4 +39,17 @@ console.log(newAsset)
     price: 300000000
   }
 */
+
+const newEmployee = pabrik.create('employee', { id: "new-employee-id" lastName: 'Lee', age: 30 })
+console.log(newEmployee)
+/*
+  RESULT
+  {
+    id: "new-employee-id",
+    firstName: 'John',
+    lastName: 'Lee',
+    age: 30
+  }
+*/
+
 ```

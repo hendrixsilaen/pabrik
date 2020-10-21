@@ -1,6 +1,6 @@
 {
   "name": "pabrik",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pabrik is a helper that will help you creating test object. The main idea is to create dummy API object response.",
   "keywords": [
     "dummy",

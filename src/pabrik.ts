@@ -8,7 +8,9 @@ export class Pabrik {
   }
 
   public create(productName: String, newValue?: Object) {
-    const selectedProduct: Object = this.getSelectedProduct(productName)
+    const selectedProduct: Object = {
+      ...this.getSelectedProduct(productName)
+    }
 
     if (newValue !== undefined && newValue !== null) {
       this.setNewValueToProduct(selectedProduct, newValue, productName)

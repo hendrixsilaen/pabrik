@@ -40,7 +40,7 @@ console.log(newAsset)
   }
 */
 
-const newEmployee = pabrik.create('employee', { id: "new-employee-id" lastName: 'Lee', age: 30 })
+const newEmployee = pabrik.create('employee', { id: "new-employee-id", lastName: 'Lee', age: 30 })
 console.log(newEmployee)
 /*
   RESULT
